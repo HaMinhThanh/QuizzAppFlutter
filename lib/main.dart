@@ -11,7 +11,12 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('Flutter App'),
         ),
-        body: Text('Xin chao from Minh Thanh'),
+        body: Column(children: [
+          Text('The Quesion?...'),
+          ElevatedButton(onPressed: null, child: Text('Answer 1')),
+          ElevatedButton(onPressed: null, child: Text('Answer 2')),
+          ElevatedButton(onPressed: null, child: Text('Answer 3')),
+        ]),
       ),
     );
   }
