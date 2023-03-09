@@ -7,7 +7,12 @@ void main() {
 class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Text('Hello Thanh'),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Flutter App'),
+        ),
+        body: Text('Xin chao from Minh Thanh'),
+      ),
     );
   }
 }
